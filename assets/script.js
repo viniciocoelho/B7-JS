@@ -262,4 +262,4 @@ function soltou()
     console.log("soltou");
 }
 
-document.addEventListener('keyup', soltou);
+//document.addEventListener('keyup', soltou);
