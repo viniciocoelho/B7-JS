@@ -247,6 +247,7 @@ function clicou()
 };
 */
 
+
 function apertou()
 {
     console.log("apertou");
