@@ -262,12 +262,34 @@ function soltou()
 {
     console.log("soltou");
 }
-*/
 
 
+// USANDO O code e key
 function soltou(e){
     console.log(e);
 
 }
 const input = document.querySelector('input');
 input.addEventListener('keyup', soltou);
+*/
+//ELEMENTOS
+const input = document.querySelector('input');
+const lista = document.querySelector('ul');
+
+//FUNÇÔES
+function handleKeyUp(e) {
+    if (e.key === 'Enter'){
+        //Adicionar elemnentos LI na lista
+       const newLi = document.createElement('li');
+       newLi.innerHTML = input.value;
+       lista.appendChild(newLi);
+
+        //limpar o campo de texto
+       input.value = '';
+    }
+}
+
+
+//EVENTOS
+
+input.addEventListener('keyup', handleKeyUp);
