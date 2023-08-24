@@ -245,7 +245,7 @@ function clicou()
 // # 3
     btn.classList.replace('blue', 'green');
 };
-*/
+
 
 
 function apertou()
@@ -262,5 +262,12 @@ function soltou()
 {
     console.log("soltou");
 }
+*/
 
-//document.addEventListener('keyup', soltou);
+
+function soltou(e){
+    console.log(e);
+
+}
+const input = document.querySelector('input');
+input.addEventListener('keyup', soltou);
